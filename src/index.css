@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Raleway:wght@500;700;900&display=swap');
+
+/* RESET STYLES */
+
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: 0;
+}
+
+/* ROOT VARIABLES */
+:root {
+  --color-bg: #fefefe;
+  --color-nav: #dedece;
+  --color-footer: #2d2e2e;
+  --color-btn: #68635d;
+  --color-text: #1f2020;
+
+  --container-width-lg: 75%;
+  --container-width-md: 90%;
+
+  --transition: all .4s linear;
+  --border: .1rem solid var(--color-btn);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--color-bg);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
+  color: var(--color-text);
+}
+
+h1 {
+  font-size: 2.9rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.7rem;
+}
+
+a {
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+p {
+  color: var(--color-text);
+  line-height: 1.6;
+  color: var(--color-text);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: .8rem 1.65rem;
+  border: var(--border);
+  border-radius: 0 15px 0 15px;
+  color: var(--color-text);
+  transition: var(--transition);
+  font-size: 1.5rem;
+}
+
+.btn:hover {
+  background-color: var(--color-btn);
+  color: var(--color-bg);
+}
+
+.btn__primary {
+  background-color: var(--color-btn);
+  color: var(--color-bg);
+  transition: var(--transition);
+}
+
+.btn__primary:hover {
+  border: var(--border);
+  color: var(--color-text);
+  background-color: var(--color-nav);
+}
+
+section {
+  margin-top: 10rem;
+}
+
+/* MEDIA QUERIES */
+@media (max-width:1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+}
+
+@media (max-width:991px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width:480px) {
+  html {
+    font-size: 50%;
+  }
+}
